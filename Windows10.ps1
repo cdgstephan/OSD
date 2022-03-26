@@ -8,10 +8,6 @@ if ((Get-MyComputerProduct) -match '20AR') {
     Set-DisRes 1920
 }
 
-#Make sure we have the latest OSD Content
-Write-Host  -ForegroundColor Cyan "Updating the OSD PowerShell Module"
-Install-Module OSD -Force
-
 Write-Host  -ForegroundColor Cyan "Importing the OSD PowerShell Module"
 Import-Module OSD -Force
 
